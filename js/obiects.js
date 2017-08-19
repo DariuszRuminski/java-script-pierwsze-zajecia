@@ -1,14 +1,45 @@
 "use strict"
+//
+//var wojtek = {
+//    imie: "Wojtek",
+//    wzrost: 181,
+//    przedstawOsobe: function() {
+//        console.log("Cześć jestem " + this.imie);
+//    }
+//}
+//
+//console.log(wojtek.imie);
+//console.log(wojtek.wzrost);
+//
+//wojtek.przedstawOsobe();
+//
+//
 
-var wojtek = {
-    imie: "Wojtek",
-    wzrost: 181,
-    przedstawOsobe: function() {
-        console.log("Cześć jestem " + this.imie);
+
+class Osoba{
+    constructor(imie, nazwisko){
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.wzrost;
+        this.oczy;
+    }
+    
+    wyswietl(){
+        console.log("Imię: " + this.imie + "\n"
+                   + "Nazwisko: " + this.nazwisko + "\n"
+                   + "Wzrost: " + this.wzrost + "\n"
+                   + "Oczy: " + this.oczy);
     }
 }
 
-console.log(wojtek.imie);
-console.log(wojtek.wzrost);
+var wojtek = new Osoba("Wojtek", "Potocki");
 
-wojtek.przedstawOsobe();
+wojtek.wzrost = 190;
+wojtek.oczy = "niebieskie";
+
+wojtek.wyswietl();
+
+
+
+
+
