@@ -1,6 +1,6 @@
 "use strict"
 
-var osoba = {
+var wojtek = {
     imie: "Wojtek",
     wzrost: 181,
     przedstawOsobe: function() {
@@ -8,9 +8,7 @@ var osoba = {
     }
 }
 
-console.log(osoba.imie);
-console.log(osoba.wzrost);
+console.log(wojtek.imie);
+console.log(wojtek.wzrost);
 
-osoba.imie = "Adam";
-console.log(osoba.imie);
-osoba.przedstawOsobe();
+wojtek.przedstawOsobe();
